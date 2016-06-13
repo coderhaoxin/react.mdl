@@ -5,6 +5,7 @@ import { Component } from 'react'
 import {
   Checkbox,
   Button,
+  Radio,
   Badge
 } from '..'
 
@@ -26,6 +27,11 @@ class App extends Component {
         <section>
           <h4>checkbox</h4>
           <Checkbox label='hello world' />
+        </section>
+
+        <section>
+          <h4>radio</h4>
+          <Radio label='hello world' />
         </section>
       </article>
     )
