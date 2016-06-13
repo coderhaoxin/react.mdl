@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { Component } from 'react'
 
 import {
+  Progress,
   Checkbox,
   Tooltip,
   Button,
@@ -13,7 +14,27 @@ import {
 } from '..'
 
 class App extends Component {
+  state = {
+    progress: 0,
+    buffer: 0
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      const { progress, buffer } = this.state
+      this.setState({
+        progress: (progress + 10) % 100,
+        buffer: (buffer + 5) % 50
+      })
+    }, 1000)
+  }
+
   render() {
+    const {
+      progress,
+      buffer
+    } = this.state
+
     return (
       <article>
         <section>
@@ -51,6 +72,11 @@ class App extends Component {
         <section>
           <h4>slider</h4>
           <Slider min='1' max='10' />
+        </section>
+
+        <section>
+          <h4>progress</h4>
+          <Progress progress={progress} buffer={buffer} />
         </section>
       </article>
     )
