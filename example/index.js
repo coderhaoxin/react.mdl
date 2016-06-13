@@ -3,7 +3,8 @@ import { render } from 'react-dom'
 import { Component } from 'react'
 
 import {
-  Button
+  Button,
+  Badge
 } from '..'
 
 class App extends Component {
@@ -11,9 +12,14 @@ class App extends Component {
     return (
       <article>
         <section>
-          <h4>Buttons</h4>
+          <h4>Button</h4>
           <Button>button</Button>
           <Button floating={true} primary={true}>floating</Button>
+        </section>
+
+        <section>
+          <h4>Badge</h4>
+          <Badge data-badge='go'>context</Badge>
         </section>
       </article>
     )
