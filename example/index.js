@@ -4,6 +4,7 @@ import { Component } from 'react'
 
 import {
   Checkbox,
+  Tooltip,
   Button,
   Switch,
   Radio,
@@ -38,6 +39,12 @@ class App extends Component {
         <section>
           <h4>switch</h4>
           <Switch label='hello world' />
+        </section>
+
+        <section>
+          <h4>tooltip</h4>
+          <Tooltip htmlFor='tip' large={true}>tooltip!!!</Tooltip>
+          <div id='tip'>hello world</div>
         </section>
       </article>
     )
