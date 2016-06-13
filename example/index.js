@@ -5,6 +5,7 @@ import { Component } from 'react'
 import {
   Progress,
   Checkbox,
+  Spinner,
   Tooltip,
   Button,
   Switch,
@@ -77,6 +78,13 @@ class App extends Component {
         <section>
           <h4>progress</h4>
           <Progress progress={progress} buffer={buffer} />
+          <br /><br />
+          <Progress indeterminate={true} />
+        </section>
+
+        <section>
+          <h4>spinner</h4>
+          <Spinner active={true} />
         </section>
       </article>
     )
