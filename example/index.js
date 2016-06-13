@@ -7,6 +7,7 @@ import {
   Tooltip,
   Button,
   Switch,
+  Slider,
   Radio,
   Badge
 } from '..'
@@ -45,6 +46,11 @@ class App extends Component {
           <h4>tooltip</h4>
           <Tooltip htmlFor='tip' large={true}>tooltip!!!</Tooltip>
           <div id='tip'>hello world</div>
+        </section>
+
+        <section>
+          <h4>slider</h4>
+          <Slider min='1' max='10' />
         </section>
       </article>
     )
