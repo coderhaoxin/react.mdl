@@ -5,6 +5,7 @@ import { Component } from 'react'
 import {
   Progress,
   Checkbox,
+  Textarea,
   Spinner,
   Tooltip,
   Button,
@@ -85,6 +86,12 @@ class App extends Component {
         <section>
           <h4>spinner</h4>
           <Spinner active={true} />
+        </section>
+
+        <section>
+          <h4>textarea</h4>
+          <Textarea rows='4' cols='50' />
+          <Textarea rows='4' cols='50' label='hello, textarea' />
         </section>
       </article>
     )
