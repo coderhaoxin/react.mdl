@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { Component } from 'react'
 
 import {
+  TextField,
   Progress,
   Checkbox,
   Textarea,
@@ -92,6 +93,17 @@ class App extends Component {
           <h4>textarea</h4>
           <Textarea rows='4' cols='50' />
           <Textarea rows='4' cols='50' label='hello, textarea' />
+        </section>
+
+        <section>
+          <h4>text field</h4>
+          <TextField />
+          <br />
+          <TextField label='hello input' floating={true} />
+          <br />
+          <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' floating={true} />
+          <br />
+          <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' expandable={true} />
         </section>
       </article>
     )
