@@ -48,7 +48,7 @@ class App extends Component {
 
         <section>
           <h4>Badge</h4>
-          <Badge data-badge='go'>context</Badge>
+          <Badge data-badge='go'>hello</Badge>
         </section>
 
         <section>
