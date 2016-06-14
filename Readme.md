@@ -10,7 +10,7 @@
     * overlap: bool
     * href: string
   - `Example`
-  ```js
+  ```jsx
   <Badge data-badge='go'>hello</Badge>
   ```
 
@@ -26,7 +26,7 @@
     * icon: bool
     * mini: bool
   - `Example`
-  ```js
+  ```jsx
   <Button>button</Button>
   <Button floating={true} primary={true}>floating</Button>
   ```
@@ -38,7 +38,7 @@
     * ripple: bool
     * id: string
   - `Example`
-  ```js
+  ```jsx
   <Checkbox label='hello world' />
   ```
 
@@ -49,7 +49,7 @@
     * progress: number,
     * buffer: number,
   - `Example`
-  ```js
+  ```jsx
   <Progress progress={progress} buffer={buffer} />
   <Progress indeterminate={true} />
   ```
@@ -62,7 +62,7 @@
     * ripple: bool,
     * id: string
   - `Example`
-  ```js
+  ```jsx
   <Radio label='hello world' />
   ```
 
@@ -70,7 +70,8 @@
   - `Props`
     * className: string
   - `Example`
-  ```js
+  ```jsx
+  <Slider min='1' max='10' />
   ```
 
 * `Spinner`
@@ -79,7 +80,7 @@
     * className: string
     * active: bool
   - `Example`
-  ```js
+  ```jsx
   <Spinner active={true} />
   ```
 
@@ -90,7 +91,7 @@
     * ripple: bool
     * id: string
   - `Example`
-  ```js
+  ```jsx
   <Switch label='hello world' />
   ```
 
@@ -103,7 +104,7 @@
     * label: string,
     * error: string
   - `Example`
-  ```js
+  ```jsx
   <TextField />
   <TextField label='hello input' floating={true} />
   <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' floating={true} />
@@ -116,7 +117,7 @@
     * label: string
     * id: string
   - `Example`
-  ```js
+  ```jsx
   <Textarea rows='4' cols='50' />
   <Textarea rows='4' cols='50' label='hello, textarea' />
   ```
@@ -127,7 +128,7 @@
     * htmlFor: string
     * large: bool
   - `Example`
-  ```js
+  ```jsx
   <Tooltip htmlFor='tip'}>tooltip!!!</Tooltip>
   <div id='tip'>hello world</div>
   ```
