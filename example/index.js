@@ -2,6 +2,8 @@
 import { render } from 'react-dom'
 import { Component } from 'react'
 
+import Tab from './tab'
+
 import {
   TextField,
   Progress,
@@ -104,6 +106,10 @@ class App extends Component {
           <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' floating={true} />
           <br />
           <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' expandable={true} />
+        </section>
+
+        <section>
+          <Tab />
         </section>
       </article>
     )
