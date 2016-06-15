@@ -2,8 +2,12 @@
 import { render } from 'react-dom'
 import { Component } from 'react'
 
-import TableExample from './table'
 import TabExample from './tab'
+
+import {
+  TableExampleRender,
+  TableExample
+} from './table'
 
 import {
   TextField,
@@ -115,6 +119,7 @@ class App extends Component {
 
         <section>
           <TableExample />
+          <TableExampleRender />
         </section>
       </article>
     )
