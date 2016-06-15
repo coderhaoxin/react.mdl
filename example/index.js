@@ -2,7 +2,8 @@
 import { render } from 'react-dom'
 import { Component } from 'react'
 
-import Tab from './tab'
+import TableExample from './table'
+import TabExample from './tab'
 
 import {
   TextField,
@@ -109,7 +110,11 @@ class App extends Component {
         </section>
 
         <section>
-          <Tab />
+          <TabExample />
+        </section>
+
+        <section>
+          <TableExample />
         </section>
       </article>
     )

@@ -4,7 +4,7 @@ import { Component } from 'react'
 
 import { TabPane, Tabs } from '..'
 
-class Tab extends Component {
+class TabExample extends Component {
 
   render() {
     return (
@@ -23,4 +23,4 @@ class Tab extends Component {
   }
 }
 
-export default Tab
+export default TabExample
