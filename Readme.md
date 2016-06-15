@@ -9,6 +9,7 @@
     * background: bool
     * overlap: bool
     * href: string
+
   - `Example`
   ```jsx
   <Badge data-badge='go'>hello</Badge>
@@ -25,6 +26,7 @@
     * accent: bool
     * icon: bool
     * mini: bool
+
   - `Example`
   ```jsx
   <Button>button</Button>
@@ -37,6 +39,7 @@
     * label: string
     * ripple: bool
     * id: string
+
   - `Example`
   ```jsx
   <Checkbox label='hello world' />
@@ -48,6 +51,7 @@
     * className: string,
     * progress: number,
     * buffer: number,
+
   - `Example`
   ```jsx
   <Progress progress={progress} buffer={buffer} />
@@ -61,6 +65,7 @@
     * name: string,
     * ripple: bool,
     * id: string
+
   - `Example`
   ```jsx
   <Radio label='hello world' />
@@ -69,6 +74,7 @@
 * `Slider`
   - `Props`
     * className: string
+
   - `Example`
   ```jsx
   <Slider min='1' max='10' />
@@ -79,6 +85,7 @@
     * singleColor: bool
     * className: string
     * active: bool
+
   - `Example`
   ```jsx
   <Spinner active={true} />
@@ -90,6 +97,7 @@
     * label: string
     * ripple: bool
     * id: string
+
   - `Example`
   ```jsx
   <Switch label='hello world' />
@@ -103,6 +111,7 @@
     * pattern: string,
     * label: string,
     * error: string
+
   - `Example`
   ```jsx
   <TextField />
@@ -116,6 +125,7 @@
     * className: string
     * label: string
     * id: string
+
   - `Example`
   ```jsx
   <Textarea rows='4' cols='50' />
@@ -127,16 +137,42 @@
     * className: string
     * htmlFor: string
     * large: bool
+
   - `Example`
   ```jsx
   <Tooltip htmlFor='tip'}>tooltip!!!</Tooltip>
   <div id='tip'>hello world</div>
   ```
 
+* `Menu`
+  - `Props`
+    * direction: string
+    * icon: string
+
+  - `Example`
+  ```jsx
+  <Menu direction='right-bottom'>
+    <MenuItem>one</MenuItem>
+    <MenuItem>two</MenuItem>
+    <MenuItem>
+      <a href='#'>hello</a>
+    </MenuItem>
+  </Menu>
+
+  <Menu direction='top-right' icon='toc'>
+    <MenuItem>one</MenuItem>
+    <MenuItem>two</MenuItem>
+    <MenuItem>
+      <a href='#'>hello</a>
+    </MenuItem>
+  </Menu>
+  ```
+
 * `Tabs`
   - `Props`
     * defaultActiveKey: string
     * onTabClick: func
+
   - `Example`
   ```jsx
   <Tabs>
@@ -158,6 +194,7 @@
     * columns: array.isRequired,
     * className: string,
     * selectable: bool
+
   - `Example`
     * basic
 
