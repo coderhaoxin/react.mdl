@@ -20,7 +20,10 @@ import {
   Switch,
   Slider,
   Radio,
-  Badge
+  Badge,
+
+  MenuItem,
+  Menu
 } from '..'
 
 class App extends Component {
@@ -111,6 +114,25 @@ class App extends Component {
           <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' floating={true} />
           <br />
           <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' expandable={true} />
+        </section>
+
+        <section>
+          <h4>menu</h4>
+          <Menu direction='right-bottom'>
+            <MenuItem>one</MenuItem>
+            <MenuItem>two</MenuItem>
+            <MenuItem>
+              <a href='#'>hello</a>
+            </MenuItem>
+          </Menu>
+
+          <Menu direction='top-right' icon='toc'>
+            <MenuItem>one</MenuItem>
+            <MenuItem>two</MenuItem>
+            <MenuItem>
+              <a href='#'>hello</a>
+            </MenuItem>
+          </Menu>
         </section>
 
         <section>
