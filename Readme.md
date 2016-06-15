@@ -133,5 +133,91 @@
   <div id='tip'>hello world</div>
   ```
 
+* `Tabs`
+  - `Props`
+    * defaultActiveKey: string
+    * onTabClick: func
+  - `Example`
+  ```jsx
+  <Tabs>
+    <TabPane key='1' tab='one'>
+      hello
+    </TabPane>
+    <TabPane key='2' tab='two'>
+      world
+    </TabPane>
+    <TabPane key='3' tab='three'>
+      go go go
+    </TabPane>
+  </Tabs>
+  ```
+
+* `Table`
+  - `Props`
+    * dataSource: array.isRequired,
+    * columns: array.isRequired,
+    * className: string,
+    * selectable: bool
+  - `Example`
+    * basic
+
+  ```jsx
+  const dataSource = [{
+    name: 'haoxin',
+    age: 18,
+    address: 'Shanghai'
+  }, {
+    name: 'luqiang',
+    age: 22,
+    address: 'Hangzhou'
+  }]
+
+  const columns = [{
+    title: 'name',
+    dataIndex: 'name',
+  }, {
+    title: 'age',
+    dataIndex: 'age',
+  }, {
+    title: 'address',
+    dataIndex: 'address',
+    key: 'address'
+  }]
+
+  <Table dataSource={dataSource} columns={columns} />
+  ```
+
+    * custom `render`
+  ```jsx
+  const dataSource = [{
+    name: 'haoxin',
+    age: 18,
+    address: 'Shanghai'
+  }, {
+    name: 'luqiang',
+    age: 22,
+    address: 'Hangzhou'
+  }]
+
+  const columns = [{
+    title: 'name',
+    dataIndex: 'name',
+    render: name => <a href='#'>{name}</a>
+  }, {
+    title: 'age',
+    dataIndex: 'age'
+  }, {
+    title: 'address',
+    dataIndex: 'address',
+    render(address, record) {
+      return (
+        <strong>{address + '. ' + record.name}</strong>
+      )
+    }
+  }]
+
+  <Table dataSource={dataSource} columns={columns} />
+  ```
+
 ### License
 MIT
