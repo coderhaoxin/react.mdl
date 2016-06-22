@@ -1,6 +1,6 @@
 {
   "name": "react.mdl",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "react material design lite",
   "main": "build/index.js",
   "repository": "coderhaoxin/react.mdl",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "lodash.pick": "^4.2.1",
     "material-design-icons": "^2.2.3",
     "material-design-lite": "^1.1.3"
   },

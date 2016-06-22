@@ -63,17 +63,17 @@ class App extends Component {
 
         <section>
           <h4>checkbox</h4>
-          <Checkbox label='hello world' />
+          <Checkbox label='hello world' onChange={checked => console.info('checkbox', checked)} />
         </section>
 
         <section>
           <h4>radio</h4>
-          <Radio label='hello world' />
+          <Radio label='hello world' onChange={checked => console.info('radio', checked)} />
         </section>
 
         <section>
           <h4>switch</h4>
-          <Switch label='hello world' />
+          <Switch label='hello world' onChange={checked => console.info('switch', checked)} />
         </section>
 
         <section>
@@ -101,7 +101,8 @@ class App extends Component {
 
         <section>
           <h4>textarea</h4>
-          <Textarea rows='4' cols='50' />
+          <Textarea rows='4' cols='50' defaultValue='oh, yeah!'
+            onChange={v => console.info('textarea', v)} />
           <Textarea rows='4' cols='50' label='hello, textarea' />
         </section>
 
@@ -109,7 +110,8 @@ class App extends Component {
           <h4>text field</h4>
           <TextField />
           <br />
-          <TextField label='hello input' floating={true} />
+          <TextField label='hello input' floating={true} defaultValue='bingo'
+            onChange={v => console.info('text', v)} />
           <br />
           <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' floating={true} />
           <br />
