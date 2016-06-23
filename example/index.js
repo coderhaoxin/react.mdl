@@ -121,7 +121,9 @@ class App extends Component {
         <section>
           <h4>menu</h4>
           <Menu direction='right-bottom'>
-            <MenuItem>one</MenuItem>
+            <MenuItem onClick={() => console.info('click menu item: one')}>
+              one
+            </MenuItem>
             <MenuItem>two</MenuItem>
             <MenuItem>
               <a href='#'>hello</a>
