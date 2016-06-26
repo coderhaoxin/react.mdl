@@ -9,6 +9,8 @@ import {
   TableExample
 } from './table'
 
+import './message'
+
 import {
   TextField,
   Progress,
