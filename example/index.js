@@ -23,6 +23,7 @@ import {
   Slider,
   Radio,
   Badge,
+  Tag,
 
   MenuItem,
   Menu
@@ -118,6 +119,12 @@ class App extends Component {
           <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' floating={true} />
           <br />
           <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' expandable={true} />
+        </section>
+
+        <section>
+          <Tag name='default' />
+          <Tag color='red' name='red' />
+          <Tag name='red' onClose={() => console.info('close tag')} />
         </section>
 
         <section>

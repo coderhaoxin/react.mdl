@@ -1,11 +1,11 @@
 {
   "name": "react.mdl",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "react material design lite",
   "main": "build/index.js",
   "repository": "coderhaoxin/react.mdl",
   "scripts": {
-    "build": "babel lib --out-dir build && cp lib/message/*.css build/message/",
+    "build": "babel lib --out-dir build && cp lib/message/*.css build/message/ && cp lib/*.css build/",
     "example": "npm run build && webpack --config example/webpack.js",
     "watch": "webpack --config example/webpack.js --watch",
     "prepublish": "npm run build",

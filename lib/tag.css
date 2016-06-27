@@ -1,0 +1,21 @@
+
+mdl-tag {
+  display: inline-block;
+  height: 22px;
+  margin: 2px 5px;
+  padding: 0px 5px;
+  font-size: 13px;
+  border-radius: 4px;
+  color: white;
+
+  > label, > i {
+    display: inline-block;
+    margin-top: 1px;
+  }
+
+  > i {
+    cursor: pointer;
+    margin-left: 3px;
+    font-style: normal;
+  }
+}

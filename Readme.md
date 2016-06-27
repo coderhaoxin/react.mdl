@@ -103,6 +103,18 @@
   <Switch label='hello world' />
   ```
 
+* `Tag`
+  - `Props`
+    * onClose: func,
+    * color: string,
+    * name: string,
+
+  - `Example`
+  ```jsx
+  <Tag name='hello' color='red'
+    onClose={() => console.info('close tag')} />
+  ```
+
 * `TextField`
   - `Props`
     * className: string,
