@@ -1,6 +1,6 @@
 {
   "name": "react.mdl",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "react material design lite",
   "main": "build/index.js",
   "repository": "coderhaoxin/react.mdl",
@@ -44,7 +44,8 @@
     "webpack": "^1.13.1"
   },
   "files": [
-    "build/"
+    "build/",
+    "asset/"
   ],
   "keywords": [
     "material",
