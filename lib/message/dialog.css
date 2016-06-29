@@ -5,6 +5,8 @@ mdl-msg-box {
   z-index: 9999;
   width: 100%;
   top: 150px;
+  right: 0;
+  left: 0;
 
   > message {
     display: flex;
