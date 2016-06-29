@@ -1,5 +1,4 @@
 
-import { render } from 'react-dom'
 import { Component } from 'react'
 
 import { TabPane, Tabs } from '..'

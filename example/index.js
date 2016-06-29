@@ -2,6 +2,7 @@
 import { render } from 'react-dom'
 import { Component } from 'react'
 
+import NavExample from './nav'
 import TabExample from './tab'
 
 import {
@@ -182,6 +183,8 @@ class App extends Component {
             </MenuItem>
           </Menu>
         </section>
+
+        <NavExample />
 
         <section>
           <TabExample />
