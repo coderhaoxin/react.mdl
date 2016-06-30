@@ -67,7 +67,9 @@ class App extends Component {
 
         <section>
           <h4>checkbox</h4>
-          <Checkbox label='hello world' onChange={checked => console.info('checkbox', checked)} />
+          <Checkbox label='hello world' onChange={checked => console.info('checkbox1', checked)} />
+          <Checkbox id='checkbox2' label='hello world !'
+            onChange={checked => console.info('checkbox2', checked)} />
         </section>
 
         <section>
@@ -105,7 +107,7 @@ class App extends Component {
 
         <section>
           <h4>textarea</h4>
-          <Textarea rows='4' cols='50' defaultValue='oh, yeah!'
+          <Textarea id='textarea' rows='4' cols='50' defaultValue='oh, yeah!'
             onChange={v => console.info('textarea', v)} />
           <Textarea rows='4' cols='50' label='hello, textarea' />
         </section>
