@@ -12,6 +12,7 @@ import {
 import './message'
 
 import {
+  DateTimePicker,
   TextField,
   Progress,
   Checkbox,
@@ -155,6 +156,11 @@ class App extends Component {
         <section>
           <TableExample />
           <TableExampleRender />
+        </section>
+
+        <section>
+          <DateTimePicker id='datepicker-01' data-enabletime={true}
+            onChange={(v, e) => console.info(v, e)} />
         </section>
       </article>
     )

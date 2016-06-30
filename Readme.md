@@ -3,6 +3,16 @@
 
 ### Components
 
+* `DateTimePicker`
+
+  - `Props`
+    * See [chmln/flatpickr](https://github.com/chmln/flatpickr)
+  - `Example`
+  ```jsx
+  <DateTimePicker id='datepicker' data-enabletime={true}
+    onChange={v => console.info(v)} />
+  ```
+
 * `Badge`
   - `Props`
     * className: string
