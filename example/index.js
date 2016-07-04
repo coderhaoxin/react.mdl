@@ -132,7 +132,7 @@ class App extends Component {
 
         <section>
           <h4>menu</h4>
-          <Menu direction='right-bottom'>
+          <Menu direction='bottom-left'>
             <MenuItem onClick={() => console.info('click menu item: one')}>
               one
             </MenuItem>
@@ -142,7 +142,10 @@ class App extends Component {
             </MenuItem>
           </Menu>
 
-          <Menu direction='top-right' icon='toc'>
+          <br />
+          <br />
+
+          <Menu direction='bottom-right' icon='toc'>
             <MenuItem>one</MenuItem>
             <MenuItem>two</MenuItem>
             <MenuItem>
