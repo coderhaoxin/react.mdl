@@ -32,6 +32,8 @@ import {
 
 class App extends Component {
   state = {
+    disabled: false,
+    checked: false,
     progress: 0,
     buffer: 0
   }
@@ -39,17 +41,30 @@ class App extends Component {
   componentDidMount() {
     setInterval(() => {
       const { progress, buffer } = this.state
+
       this.setState({
         progress: (progress + 10) % 100,
         buffer: (buffer + 5) % 50
       })
     }, 1000)
+
+    setInterval(() => {
+      const { disabled, checked } = this.state
+
+      this.setState({
+        disabled: !disabled,
+        checked: !checked
+      })
+    }, 3000)
   }
 
   render() {
     const {
       progress,
-      buffer
+      buffer,
+
+      disabled,
+      checked
     } = this.state
 
     return (
@@ -70,16 +85,23 @@ class App extends Component {
           <Checkbox label='hello world' onChange={checked => console.info('checkbox1', checked)} />
           <Checkbox id='checkbox2' label='hello world !'
             onChange={checked => console.info('checkbox2', checked)} />
+
+          <Checkbox label='controlled disabled' disabled={disabled} />
+          <Checkbox label='controlled checked' checked={checked} />
         </section>
 
         <section>
           <h4>radio</h4>
           <Radio label='hello world' onChange={checked => console.info('radio', checked)} />
+          <Radio label='controlled disabled' disabled={disabled} />
+          <Radio label='controlled checked' checked={checked} />
         </section>
 
         <section>
           <h4>switch</h4>
           <Switch label='hello world' onChange={checked => console.info('switch', checked)} />
+          <Switch label='controlled disabled' disabled={disabled} />
+          <Switch label='controlled checked' checked={checked} />
         </section>
 
         <section>
