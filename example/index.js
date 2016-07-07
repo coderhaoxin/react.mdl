@@ -70,6 +70,10 @@ class App extends Component {
     return (
       <article>
         <section>
+          <Progress id='top-progress' indeterminate={true} />
+        </section>
+
+        <section>
           <h4>Button</h4>
           <Button>button</Button>
           <Button floating={true} primary={true}>floating</Button>
