@@ -1,13 +1,13 @@
 {
   "name": "react.mdl",
-  "version": "0.7.3",
+  "version": "0.8.0",
   "description": "react material design lite",
   "main": "build/index.js",
   "repository": "coderhaoxin/react.mdl",
   "scripts": {
-    "build": "babel lib --out-dir build && cp lib/message/*.css build/message/ && cp lib/*.css build/",
     "example": "npm run build && webpack --config example/webpack.js",
     "watch": "webpack --config example/webpack.js --watch",
+    "build": "webpack --config webpack.js",
     "prepublish": "npm run build",
     "lint": "eslint lib",
     "test": "echo todo"
@@ -32,6 +32,7 @@
     "eslint-config-bx-bsd": "^1.1.0",
     "eslint-plugin-react": "^5.1.1",
     "exports-loader": "^0.6.3",
+    "extract-text-webpack-plugin": "^1.0.1",
     "postcss": "^5.0.21",
     "postcss-cssnext": "^2.6.0",
     "postcss-import": "^8.1.2",

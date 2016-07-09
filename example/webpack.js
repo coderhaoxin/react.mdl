@@ -23,24 +23,11 @@ module.exports = {
       loader: 'babel',
       exclude: /node_modules/
     }, {
-      test: require.resolve('material-design-lite/material'),
-      loader: 'exports?componentHandler'
-    }, {
       test: /\.css$/,
       loader: 'style-loader!css-loader!postcss-loader',
-      // exclude: /node_modules/
+      exclude: /node_modules/
     }]
   },
-
-  postcss: [
-    require('postcss-import'),
-    require('postcss-nested'),
-    require('postcss-cssnext')({
-      browsers: ['last 1 versions']
-    }),
-    require('postcss-inline-svg'),
-    require('postcss-svgo')
-  ],
 
   devtool: 'source-map'
 }
