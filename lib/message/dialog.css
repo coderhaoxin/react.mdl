@@ -33,13 +33,13 @@ mdl-msg-box {
           background-size: 18px !important;
 
           &.success {
-            background: svg-load('../../asset/i-message-success.svg');
+            background: svg-load('i-message-success.svg');
           }
           &.error {
-            background: svg-load('../../asset/i-message-error.svg');
+            background: svg-load('i-message-error.svg');
           }
           &.warn {
-            background: svg-load('../../asset/i-message-warn.svg');
+            background: svg-load('i-message-warn.svg');
           }
         }
       }

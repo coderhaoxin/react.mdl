@@ -51,7 +51,9 @@ module.exports = {
     require('postcss-cssnext')({
       browsers: ['last 1 versions']
     }),
-    require('postcss-inline-svg'),
+    require('postcss-inline-svg')({
+      path: 'asset'
+    }),
     require('postcss-svgo')
   ],
 
