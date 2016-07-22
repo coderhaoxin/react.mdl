@@ -26,3 +26,18 @@ setTimeout(() => {
     content: 'none'
   })
 }, 1000)
+
+setTimeout(() => {
+  // default
+  message.show({
+    type: 'success',
+    content: 'OK',
+    duration: 1000
+  })
+
+  message.show({
+    type: 'warn',
+    content: 'hi!',
+    duration: 1000
+  })
+}, 5000)
