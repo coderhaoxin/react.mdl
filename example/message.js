@@ -37,7 +37,7 @@ setTimeout(() => {
 
   message.show({
     type: 'warn',
-    content: 'hi!',
+    content: 666,
     duration: 1000
   })
 }, 5000)
