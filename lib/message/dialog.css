@@ -25,7 +25,7 @@ mdl-msg-box {
         background: rgba(0, 0, 0, 0.7);
         color: white;
 
-        > img {
+        > i {
           height: 18px;
           width: 18px;
           margin-right: 5px;
