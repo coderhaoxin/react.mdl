@@ -70,13 +70,13 @@ class App extends Component {
     return (
       <article>
         <section>
-          <Progress id='top-progress' indeterminate={true} />
+          <Progress id='top-progress' indeterminate />
         </section>
 
         <section>
           <h4>Button</h4>
-          <Button>button</Button>
-          <Button floating={true} primary={true}>floating</Button>
+          <Button raised>button</Button>
+          <Button floating primary raised>floating</Button>
         </section>
 
         <section>
@@ -110,7 +110,7 @@ class App extends Component {
 
         <section>
           <h4>tooltip</h4>
-          <Tooltip htmlFor='tip' large={true}>tooltip!!!</Tooltip>
+          <Tooltip htmlFor='tip' large>tooltip!!!</Tooltip>
           <div id='tip'>hello world</div>
         </section>
 
@@ -123,12 +123,12 @@ class App extends Component {
           <h4>progress</h4>
           <Progress progress={progress} buffer={buffer} />
           <br /><br />
-          <Progress indeterminate={true} />
+          <Progress indeterminate />
         </section>
 
         <section>
           <h4>spinner</h4>
-          <Spinner active={true} />
+          <Spinner active />
         </section>
 
         <section>
@@ -142,12 +142,12 @@ class App extends Component {
           <h4>text field</h4>
           <TextField />
           <br />
-          <TextField label='hello input' floating={true} defaultValue='bingo'
+          <TextField label='hello input' floating defaultValue='bingo'
             onChange={v => console.info('text', v)} />
           <br />
-          <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' floating={true} />
+          <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' floating />
           <br />
-          <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' expandable={true} />
+          <TextField pattern='-?[0-9]*(\.[0-9]+)?' label='number' error='u sb' expandable />
         </section>
 
         <section>
@@ -190,7 +190,7 @@ class App extends Component {
         </section>
 
         <section>
-          <DateTimePicker id='datepicker-01' data-enabletime={true}
+          <DateTimePicker id='datepicker-01' data-enabletime
             onChange={(v, e) => console.info(v, e)} />
         </section>
       </article>
