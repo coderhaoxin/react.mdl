@@ -24,6 +24,7 @@ import {
   Slider,
   Radio,
   Badge,
+  Icon,
   Tag,
 
   MenuItem,
@@ -71,6 +72,8 @@ class App extends Component {
       <article>
         <section>
           <Progress id='top-progress' indeterminate />
+          <Icon toggle type='keyboard_arrow_down' />
+          <Icon type='keyboard_arrow_down' />
         </section>
 
         <section>
