@@ -9,7 +9,7 @@
     "watch": "webpack --config example/webpack.js --watch",
     "build": "webpack --config webpack.js",
     "prepublish": "npm run build",
-    "lint": "eslint lib",
+    "lint": "eslint lib && eslint example",
     "test": "echo todo"
   },
   "dependencies": {

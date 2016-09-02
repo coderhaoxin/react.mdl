@@ -1,5 +1,4 @@
 
-import { render } from 'react-dom'
 import { Component } from 'react'
 
 import { Table } from '..'
@@ -70,4 +69,3 @@ export class TableExampleRender extends Component {
     )
   }
 }
-
