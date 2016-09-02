@@ -4,6 +4,7 @@ import './message'
 import { render } from 'react-dom'
 import { Component } from 'react'
 
+import CardExample from './card'
 import MenuExample from './menu'
 import FormExample from './form'
 import NavExample from './nav'
@@ -24,6 +25,8 @@ class App extends Component {
 
     return (
       <article>
+        <CardExample />
+
         <FormExample />
 
         <MenuExample />
