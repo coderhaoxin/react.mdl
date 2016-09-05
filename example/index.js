@@ -5,6 +5,8 @@ import { render } from 'react-dom'
 import { Component } from 'react'
 
 import SnackbarExample from './snackbar'
+import DialogExample from './dialog'
+import BasicExample from './basic'
 import CardExample from './card'
 import MenuExample from './menu'
 import FormExample from './form'
@@ -23,10 +25,13 @@ import {
 class App extends Component {
 
   render() {
-
     return (
       <article>
         <SnackbarExample />
+
+        <DialogExample />
+
+        <BasicExample />
 
         <CardExample />
 
