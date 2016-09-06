@@ -4,6 +4,7 @@ import './message'
 import { render } from 'react-dom'
 import { Component } from 'react'
 
+import SnackbarExample from './snackbar'
 import CardExample from './card'
 import MenuExample from './menu'
 import FormExample from './form'
@@ -25,6 +26,8 @@ class App extends Component {
 
     return (
       <article>
+        <SnackbarExample />
+
         <CardExample />
 
         <FormExample />
