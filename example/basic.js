@@ -46,6 +46,7 @@ class BasicExample extends Component {
         <section>
           <h4>Button</h4>
           <Button raised>button</Button>
+          <Button disabled>button</Button>
           <Button floating primary raised>floating</Button>
         </section>
 
