@@ -5,6 +5,8 @@
 
 ### react.mdl
 
+React Components for [google/material-design-lite v1](https://github.com/google/material-design-lite)
+
 ### Components
 
 * `DateTimePicker`
