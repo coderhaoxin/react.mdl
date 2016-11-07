@@ -51,7 +51,7 @@ class App extends Component {
         </section>
 
         <section>
-          <DateTimePicker id='datepicker-01' data-enabletime
+          <DateTimePicker id='datepicker-01' data-enable-time
             onChange={(v, e) => console.info(v, e)} />
         </section>
       </article>

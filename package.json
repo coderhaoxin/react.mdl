@@ -1,6 +1,6 @@
 {
   "name": "react.mdl",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "react material design lite",
   "main": "build/index.js",
   "repository": "coderhaoxin/react.mdl",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "flatpickr": "^2.0.5",
+    "flatpickr": "^2.0.8",
     "lodash.pick": "^4.4.0",
     "material-design-icons": "^3.0.1",
     "material-design-lite": "^1.2.1"
