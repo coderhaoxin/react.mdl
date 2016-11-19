@@ -27,6 +27,12 @@ class App extends Component {
   render() {
     return (
       <article>
+
+        <section>
+          <DateTimePicker id='datepicker-01' data-enable-time
+            onChange={(_, v) => console.info(v)} />
+        </section>
+
         <SnackbarExample />
 
         <DialogExample />
@@ -50,10 +56,6 @@ class App extends Component {
           <TableExampleRender />
         </section>
 
-        <section>
-          <DateTimePicker id='datepicker-01' data-enable-time
-            onChange={(v, e) => console.info(v, e)} />
-        </section>
       </article>
     )
   }
