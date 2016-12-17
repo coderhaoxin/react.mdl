@@ -3,6 +3,10 @@
 [![License][license-img]][license-url]
 [![Dependency status][david-img]][david-url]
 
+### Deprecated !
+
+* Try [haoxins/react-mdc](https://github.com/haoxins/react-mdc)
+
 ### react.mdl
 
 React Components for [google/material-design-lite v1](https://github.com/google/material-design-lite)
